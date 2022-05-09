@@ -1,0 +1,67 @@
+$dark-color: #212121;
+$main-color: #0d7377;
+$neutral-color: #32e0c4;
+$light-color: #eeeeee;
+$tomato-color: #d50000;
+
+.cards-container {
+  min-height: 400px;
+  max-height: 450px;
+  overflow-x: auto;
+  .card-task {
+    background-color: $light-color;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    min-height: 60px;
+    position: relative;
+    cursor: grab;
+    .task-title {
+      display: flex;
+      justify-content: space-between;
+      color: $main-color;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      button {
+        width: auto;
+        background: none;
+        border: none;
+        color: $main-color;
+        padding: 5px;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        &:hover {
+          color: $tomato-color;
+        }
+      }
+    }
+    .sub-tasks {
+      display: flex;
+      justify-content: space-between;
+      color: $main-color;
+      font-size: 18px;
+      margin-top: 30px;
+      bottom: 0;
+      button {
+        width: auto;
+        background: none;
+        border: none;
+        color: $main-color;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          color: $tomato-color;
+        }
+      }
+    }
+  }
+}
+
+.card-task.active {
+  box-shadow: 1px -3px 19px 1px rgba(255, 9, 9, 0.75);
+-webkit-box-shadow: 1px -3px 19px 1px rgba(161, 18, 18, 0.75);
+-moz-box-shadow: 1px -3px 19px 1px rgba(255, 0, 0, 0.75);
+  border: 2px solid $tomato-color;
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Kanit:ital,wght@1,800&family=Montserrat:wght@400;800&display=swap");
+
+$dark-color: #212121;
+$main-color: #0d7377;
+$neutral-color: #32e0c4;
+$light-color: #eeeeee;
+$tomato-color: #d50000;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgba($dark-color, $alpha: 0.9);
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body {
+  scrollbar-width: 10px;
+  scrollbar-color: $main-color $dark-color;
+}
+
+body::-webkit-scrollbar-track {
+  background: $main-color;
+  width: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+  border-radius: 2px;
+  border: 3px solid $main-color;
+}
+
+li,
+a,
+button {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  color: $light-color;
+  font-weight: 800;
+  font-size: 46px;
+}
+
+p {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+}
+
+/*
+    font-family: 'Comfortaa', cursive;
+
+    font-family: 'Kanit', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+*/

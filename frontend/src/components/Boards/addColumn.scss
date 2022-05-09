@@ -1,0 +1,32 @@
+$dark-color: #212121;
+$main-color: #0d7377;
+$neutral-color: #32e0c4;
+$light-color: #eeeeee;
+$tomato-color: #d50000;
+
+.add-column {
+  position: absolute;
+  bottom: 20rem;
+  right: 0.5rem;
+  margin-top: 30px;
+  button {
+    width: 11rem;
+    height: 2rem;
+    font-size: 0.85rem;
+    color: $light-color;
+    background-color: $dark-color;
+    border: none;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 2px 7px 5px 0px $dark-color;
+    -webkit-box-shadow: 2px 7px 5px 0px $dark-color;
+    -moz-box-shadow: 2px 7px 5px 0px $dark-color;
+    cursor: pointer;
+    &:hover {
+      color: $dark-color;
+      background-color: $light-color;
+    }
+  }
+}

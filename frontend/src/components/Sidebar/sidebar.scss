@@ -1,0 +1,70 @@
+$dark-color: #212121;
+$main-color: #0d7377;
+$neutral-color: #32e0c4;
+$light-color: #eeeeee;
+$tomato-color: #d50000;
+
+.sidebar {
+    background-color: $dark-color;
+    width: 20%;
+    height: 100vh;
+    z-index: 1;
+    box-shadow: 5px 0 5px 0 rgba($dark-color,0.8);
+    .sidebar-info {
+        color: $light-color;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding: 3rem 0;
+        user-select: none;
+        p {
+            padding: 1.25rem 0;
+            color: $main-color;
+        }
+        .icon {
+            font-size: 1.5rem;
+            color: $neutral-color;
+        }
+        span {
+            font-size: 1.5rem;
+            padding-left: 1rem;
+            font-weight: 600;
+        }
+    }
+    .sidebar-contributors {
+        color: $light-color;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .users-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.5rem;
+        align-items: center;
+        justify-content: space-around;
+        .users-icons {
+            background-color: $main-color;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+    }
+    .return-home {
+        position: absolute;
+        bottom: 1rem;
+        left: 6rem;
+        background-color: $main-color;
+        color: $light-color;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        &:hover {
+            background-color: $light-color;
+            color: $main-color;
+            cursor: pointer;
+        }
+    }
+}

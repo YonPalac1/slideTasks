@@ -1,0 +1,26 @@
+$dark-color: #212121;
+$main-color: #0d7377;
+$neutral-color: #32e0c4;
+$light-color: #eeeeee;
+$tomato-color: #d50000;
+
+.slider{
+  height: 40px;
+  border: 2px solid $main-color;
+  border-radius: 20px;
+}
+
+.thumb{
+  background-color: $neutral-color;
+  cursor:pointer;
+  width:40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.slider.green{
+  border: 2px solid $main-color;
+}
+.slider.green .thumb{
+  background-color: $neutral-color;
+}
